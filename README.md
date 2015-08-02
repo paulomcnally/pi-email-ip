@@ -11,6 +11,10 @@ Send IP address to email with Raspberry Pi
 
     $ git clone https://github.com/paulomcnally/pi-email-ip.git
 
+## Move to repository directory
+
+    cd pi-email-ip
+
 ## Edit ip file and change lines 8, 9 and 10.
 
     MANDRILL_API_KEY=""
