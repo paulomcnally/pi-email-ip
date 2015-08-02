@@ -1,0 +1,24 @@
+# !/bin/sh -e
+# /etc/init.d/ip
+#
+# sudo chmod 755 /etc/init.d/ip
+# sudo update-rc.d ip defaults
+
+MANDRILL_API_KEY=""
+TO_EMAIL=""
+TO_NAME=""
+
+case "$1" in
+  start)
+    python /home/pi/pi-email-ip/send.py
+    ;;
+  stop)
+
+    ;;
+  *)
+    echo "Usage: /etc/init.d/ip {start|stop}"
+    exit 1
+    ;;
+esac
+
+ exit 0
