@@ -1,24 +1,36 @@
 PI Email IP
 ===========
 
-Send IP address to email.
+Send IP address to email with Raspberry Pi
 
 ## Require
 
     $ pip install mandrill
 
-* 1 - Set **MANDRILL_API_KEY** environment variable.
-* 2 - Set **TO_EMAIL** environment variable.
-* 3 - Set **TO_NAME** environment variable.
+## Clone this repository
 
-> On /home/pi/.profile added environment variables.
+    $ git clone https://github.com/paulomcnally/pi-email-ip.git
 
-    export MANDRILL_API_KEY="... you're api key ..."
-    export TO_EMAIL="foo@bar.com"
-    export TO_NAME="Foo Bar"
+## Edit ip file and change lines 8, 9 and 10.
 
-To get a MANDRILL_API_KEY create an account on https://www.mandrill.com/
+    MANDRILL_API_KEY=""
+    TO_EMAIL=""
+    TO_NAME=""
 
-## Run script
+> To get a MANDRILL_API_KEY create an account on http://mandrill.com/. TO_EMAIL is you're email addres and TO_NAME is you're name.
 
-    python send.py
+## Copy ip file
+
+    $ sudo cp ip /etc/init.d/ip
+
+## Set correct permissions
+
+    $ sudo chmod 755 /etc/init.d/ip
+
+## Added ip to start commands
+
+    $ sudo update-rc.d ip defaults
+
+## Run test
+
+    $ sudo /etc/init.d/ip start
