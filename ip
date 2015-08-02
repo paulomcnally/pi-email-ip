@@ -10,7 +10,10 @@ TO_NAME=""
 
 case "$1" in
   start)
-    python /home/pi/pi-email-ip/send.py
+    _IP=$(hostname -I) || true
+    if [ "$_IP" ]; then
+      python /home/pi/pi-email-ip/send.py "$_IP" "$MANDRILL_API_KEY" "$TO_EMAIL" "$TO_NAME"
+    fi
     ;;
   stop)
 
