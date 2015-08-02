@@ -1,6 +1,7 @@
 # !/bin/sh -e
 # /etc/init.d/ip
 #
+# sudo cp ip /etc/init.d/ip
 # sudo chmod 755 /etc/init.d/ip
 # sudo update-rc.d ip defaults
 
