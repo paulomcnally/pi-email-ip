@@ -1,11 +1,11 @@
 PI Email IP
 ===========
 
-Send IP address to email with Raspberry Pi
+Send local IP address to email with Raspberry Pi
 
 ## Require
 
-    $ pip install mandrill
+    $ pip install sendgrid
 
 ## Clone this repository
 
@@ -17,11 +17,11 @@ Send IP address to email with Raspberry Pi
 
 ## Edit ip file and change lines 8, 9 and 10.
 
-    MANDRILL_API_KEY=""
+    SENDGRID_APIKEY=""
     TO_EMAIL=""
     TO_NAME=""
 
-> To get a MANDRILL_API_KEY create an account on http://mandrill.com/. TO_EMAIL is you're email addres and TO_NAME is you're name.
+> To get a SENDGRID_APIKEY create an account on https://sendgrid.com/. TO_EMAIL is you're email address.
 
 ## Copy ip file
 
