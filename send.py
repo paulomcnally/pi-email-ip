@@ -6,7 +6,7 @@ import sys
 # sys.argv[3] = TO_EMAIL
 
 # send email
-client = sendgrid.SendGridClient(sys.argv[2])
+client = sendgrid.SendGridAPIClient(apikey=sys.argv[2])
 message = sendgrid.Mail()
 
 message.add_to(sys.argv[3])
