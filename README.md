@@ -19,7 +19,6 @@ Send local IP address to email with Raspberry Pi
 
     SENDGRID_APIKEY=""
     TO_EMAIL=""
-    TO_NAME=""
 
 > To get a SENDGRID_APIKEY create an account on https://sendgrid.com/. TO_EMAIL is you're email address.
 
