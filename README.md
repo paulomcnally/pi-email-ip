@@ -5,7 +5,7 @@ Send local IP address to email with Raspberry Pi
 
 ## Require
 
-    $ pip install sendgrid
+    $ sudo pip install sendgrid
 
 ## Clone this repository
 
